@@ -1,0 +1,204 @@
+.foto {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   padding-top: 30%;
+   
+   
+}
+
+.foto__doctor {
+   border-radius: 10%;
+}
+
+@media screen and (max-width:740px) {
+   .foto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding-top: 30%;
+      
+   }
+
+   .foto__doctor {
+      width: 250px;
+      height: 300px;
+      
+   }
+}
+
+.info-lia {
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding-top: 4%;
+   
+}
+
+.info-lia__name {
+   font-family: 'Shippori Mincho', serif;
+		font-size: 30px;
+		color: #40A3F8;
+		text-align: end;
+}
+
+.info-lia__special {
+   font-family: 'Shippori Mincho', serif;
+		font-size: 28px;
+		padding-top: 2%;
+		
+		font-weight: 500;
+		text-decoration: none;
+		color: black;
+}
+
+
+.text-lia {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 28px;
+   line-height: 150%;
+   padding-top: 5%;
+   margin-bottom: 13%;
+}
+.text-lia__aduc {
+   font-family: 'Shippori Mincho', serif;
+   font-size: 30px;
+   color: #40A3F8;
+   text-align: end;
+   
+}
+.text-lia__aduc-info {
+   font-family: 'Shippori Mincho', serif;
+   font-size: 28px;
+   padding-top: 2%;
+   
+   font-weight: 500;
+   text-decoration: none;
+   color: black;
+   margin-bottom: 5%;
+   text-align: center;
+}
+.text-lia__practic {
+   font-family: 'Shippori Mincho', serif;
+   font-size: 30px;
+   color: #40A3F8;
+   text-align: end;
+}
+.text-lia__practic-info {
+   font-family: 'Shippori Mincho', serif;
+   font-size: 28px;
+   padding-top: 2%;
+   
+   font-weight: 500;
+   text-decoration: none;
+   color: black;
+   margin-bottom: 5%;
+   text-align: center;
+}
+.text-lia__time {
+   font-family: 'Shippori Mincho', serif;
+   font-size: 30px;
+   color: #40A3F8;
+   text-align: end;
+}
+.text-lia__time-info {
+   font-family: 'Shippori Mincho', serif;
+   font-size: 28px;
+   padding-top: 2%;
+   
+   font-weight: 500;
+   text-decoration: none;
+   color: black;
+   text-align: center;
+}
+
+@media screen and (max-width:740px) {
+
+   .info-lia__name {
+   font-family: 'Shippori Mincho', serif;
+		font-size: 16px;
+		color: #40A3F8;
+		text-align: end;
+}
+.info-lia__special {
+   font-family: 'Shippori Mincho', serif;
+		font-size: 14px;
+		padding-top: 2%;
+		
+		font-weight: 500;
+		text-decoration: none;
+		color: black;
+}
+
+
+.text-lia {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 28px;
+   line-height: 100%;
+   padding-top: 5%;
+   margin-bottom: 13%;
+}
+.text-lia__aduc {
+   font-family: 'Shippori Mincho', serif;
+		font-size: 16px;
+		color: #40A3F8;
+		text-align: end;
+   
+}
+.text-lia__aduc-info {
+
+   font-family: 'Shippori Mincho', serif;
+		font-size: 14px;
+		padding-top: 2%;
+		
+		font-weight: 500;
+		text-decoration: none;
+		color: black;
+      margin-bottom: 5%;
+   text-align: center;
+}
+.text-lia__practic {
+   font-family: 'Shippori Mincho', serif;
+		font-size: 16px;
+		color: #40A3F8;
+		text-align: end;
+}
+.text-lia__practic-info {
+   font-family: 'Shippori Mincho', serif;
+   font-size: 14px;
+   padding-top: 2%;
+   
+   font-weight: 500;
+   text-decoration: none;
+   color: black;
+   margin-bottom: 5%;
+text-align: center;
+}
+.text-lia__time {
+   font-family: 'Shippori Mincho', serif;
+		font-size: 16px;
+		color: #40A3F8;
+		text-align: end;
+}
+.text-lia__time-info {
+   font-family: 'Shippori Mincho', serif;
+   font-size: 14px;
+   padding-top: 2%;
+   
+   font-weight: 500;
+   text-decoration: none;
+   color: black;
+   margin-bottom: 5%;
+text-align: center;
+}
+}

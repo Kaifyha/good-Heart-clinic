@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/normolaz.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="./js/maskinput.js"></script>
+	<title>Clinic Heart</title>
+</head>
+<body>
+		<div class="container">
+			<div class="image">
+			<img src="./img/1.jpg" alt="logomedic" class="image__start"> 
+			</div>
+
+			<header class="menu" id="myTopnav">
+						<a href="" class="menu__link active" >Home</a>
+						<a href="" class="menu__link">Services</a>
+						<a href="" class="menu__link">Specialists</a>
+						<a href="" class="menu__link">About</a>
+						<a href="" class="menu__link">Registration</a>
+						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+							<i class="fa fa-bars" ></i>
+						</a>
+			</header>
+			<script>
+				function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "menu") {
+					x.className += " responsive";
+				} else {
+					x.className = "menu";
+				}
+				}
+			</script>
+
+			<div class="block">
+				<p class="block__name">The best private clinic</p>
+				<p class="block__text">in your city</p>
+			</div>
+			<div class="clinic-name">
+				<p class="clinic-name__name">good <span>HEART</span> clinic</p>
+			</div>
+			<div class="info">
+				<div class="info__line-one"></div>
+				<div class="info__line-two"></div>
+				<h1 class="info__name">Why choose us</h1>
+					<div class="info__info">
+						<img src="./img/specialist.jpg" alt="specialist" class="info__info-specialist">
+						<p class="info__info-bold">Best specialists</p>
+						<img src="./img/equipment.png" alt="equipment" class="info__info-equipment">
+						<p class="info__info-bold">The latest equipment</p>
+						<img src="./img/prices.png" alt="prices" class="info__info-prices">
+						<p class="info__info-bold">Acceptable prices</p>
+					</div>
+			</div>
+			<div class="infotext">
+				<p class="infotext__doctor">Only here you will be served by doctors of the highest category with extensive experience</p>
+				<p class="infotext__equipment">Our clinic has the latest and most modern equipment.</p>
+				<p class="infotext__prices">Affordable prices will allow you to complete the full range of research you are interested in</p>
+			</div>
+			<div class="imagedoctor">
+			<img src="./img/bestdoctor2.jpg" alt="bestdoctor" class="imagedoctor__bestdoctor">
+			</div>
+			<div class="heartimage">
+				
+				<img src="./img/heart.png" alt="heart" class="heartimage__heart">
+			</div>
+
+			<div class="item">
+				<p class="item__text-bold">The best specialists and high quality service are waiting for you.</p>
+				
+				<p class="item__info-text">With our best doctors, we will provide the best medical services. 
+					Experienced doctors, modern equipment and affordable prices will pleasantly surprise you.</p>
+			</div>
+			<div class="arrow">
+				
+				<div class="arrow__text"><img src="./img/vibe.jpg" alt="arrow" class="arrow__img">All specialists can give online consultation</div>
+				<div class="arrow__text"><img src="./img/vibe.jpg" alt="arrow" class="arrow__img">Consultation of the best specialists</div>
+				<div class="arrow__text"><img src="./img/vibe.jpg" alt="arrow" class="arrow__img">We work around the clock</div>
+			</div>
+			<h1 class="info__doctors">Here are our doctors</h1>
+			<div class="slider__wrapper">
+			<div class="slider single-item">
+				<div><a href="./helga kyper/index5.html" target="_blank" rel="nofollow" class="single-item__link"><img src="./img/doctors/11.jpg" alt="doctors" class="slider__doctor"></a></div>
+				<div><a href="./lia amori/index1.html" target="_blank" rel="nofollow" class="single-item__link"><img src="./img/doctors/12.jpg" alt="doctors" class="slider__doctor"></a></div>
+				<div><a href="./mia holfan/index2.html" target="_blank" rel="nofollow" class="single-item__link"><img src="./img/doctors/13.jpg" alt="doctors" class="slider__doctor"></a></div>
+				<div><a href="./tim rassol/index3.html" target="_blank" rel="nofollow" class="single-item__link"><img src="./img/doctors/14.jpg" alt="doctors" class="slider__doctor"></a></div>
+				<div><a href="./rob wilson/index3.html" target="_blank" rel="nofollow" class="single-item__link"><img src="./img/doctors/15.jpg" alt="doctors" class="slider__doctor"></a></div>
+				<div><a href="./nill gofman/index4.html" target="_blank" rel="nofollow" class="single-item__link"><img src="./img/doctors/16.jpg" alt="doctors" class="slider__doctor"></a></div>
+			</div>
+		</div>
+
+
+		<div class="timeregist"><p class="timeregist__text">Time to register</p></div>
+		<form action="check_post.php" method="post">
+		<div class="registration">
+
+				<script type="text/javascript">
+					jQuery(function($){
+					$("#tel").mask("+375(99) 99-99-999");
+					$("#name").mask("");
+					});
+				</script>
+				<input class="research__number" type="tel" id="tel" name="tel" placeholder="Your number">
+				<input class="research__name" type="text" id="name" name="name" placeholder="Your name">
+				<input class="research__submit" type="submit" value="Send">
+				</div>
+				<div class="registracion__doctor-img"><img src="./img/doctor.jpg" alt="doctor" class="registracion__doctor-img-doctor"></div>
+
+			</form>
+			<div class="textmaps"><p class="textmaps__text">where are we</p></div>
+			<div class="maps">
+				<iframe class="maps__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3094.4862721254917!2d-84.5034279843787!3d39.14092024015714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8841b39813aaaaab%3A0xf8de29b38ec4c772!2z0KbQuNC90YbQuNC90L3QsNGC0Lgg0KfQuNC70LTRgNC10L3RgSDQpdC-0YHQv9C40YLQsNC7INCc0LXQtNC40LrQsNC7INCh0LXQvdGC0LXRgA!5e0!3m2!1sru!2sby!4v1662656343111!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="icons">
+				<div class="icons__inst"></div>
+				<div class="icons__face"></div>
+				<div class="twit"></div>
+			</div>
+			<div class="blockadres">
+			<div class="blockadres__adres"><p class="blockadres__adres-clinic">Cincinnati Children's Hospital Medical Center,<br> Burnet Avenue, Cincinnati, OH, United States</p></div>
+			
+			<div class="blockadres__inst"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="./img/social/Vector (4).png" alt="insta" class="blockadres__inst-inst"></a></div>
+			<div class="blockadres__face"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="./img/social/Vector (3).png" alt="face" class="blockadres__face-face"></a></div>
+			<div class="blockadres__twit"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img src="./img/social/Vector (5).png" alt="twit" class="blockadres__twit-twit"></a></div>
+			</div>
+			
+			<div class="blockadres__line"></div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		
+   	<script src="slick/slick.min.js"></script>
+		<script src="./js/main.js"></script>
+
+		
+</body>
+</html>

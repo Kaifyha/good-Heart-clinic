@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style2.css">
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/css/normolaz.css">
+   <title>Document</title>
+   
+</head>
+<body>
+   <div class="container">
+      <div class="image">
+      <img src="/img/1.jpg" alt="logomedic" class="image__start"> 
+      </div>
+
+      <header class="menu" id="myTopnav">
+               <a href="/index.html" class="menu__link active" >Home</a>
+               <a href="" class="menu__link">Services</a>
+               <a href="" class="menu__link">Specialists</a>
+               <a href="" class="menu__link">About</a>
+               <a href="" class="menu__link">Registration</a>
+               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars" ></i>
+                </a>
+      </header>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "menu") {
+             x.className += " responsive";
+           } else {
+             x.className = "menu";
+           }
+         }
+       </script>
+
+      <div class="block">
+         <p class="block__name">The best private clinic</p>
+         <p class="block__text">in your city</p>
+      </div>
+      <div class="clinic-name">
+         <p class="clinic-name__name">good <span>HEART</span> clinic</p>
+      </div>
+
+      <div class="foto">
+         <img src="/img/doctors/3.jpg" alt="Lia amori" class="foto__doctor">
+      </div>
+      <div class="info-lia">
+         <h1 class="info-lia__name">Mia Holfan</h1>
+         <p class="info-lia__special">child specialist</p>
+      </div>
+      <div class="text-lia">
+         <p class="text-lia__aduc">Education</p>
+         <p class="text-lia__aduc-info"> 
+            
+            
+University: Hacettepe Medical School; 1993-1999
+Residency: Ophthalmology Clinic of the Götepe Clinic and Research Hospital; 2000-2004
+Associate Professor: University University. Medenyuta Gotepepe University</p>
+         <p class="text-lia__practic">Practic</p>
+         <p class="text-lia__practic-info"> 
+            
+2005~2005 Internship in laparoscopic surgery at the University of Kiel in Germany
+2001~2003 Harvard Medical School USA Massachusetts general hospital Obstetrics and Gynecology Vincent center for reproductive biology
+         </p>
+         <p class="text-lia__time">Works Time</p>
+            <p class="text-lia__time-info">Works the first month on even numbers, the second on odd days</p>
+      </div>
+   </div>
+</body>
+</html>

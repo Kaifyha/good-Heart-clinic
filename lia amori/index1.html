@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./css/style1.css">
+   <link rel="stylesheet" href="/css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/css/normolaz.css">
+   <title>Document</title>
+   
+</head>
+<body>
+   <div class="container">
+      <div class="image">
+      <img src="/img/1.jpg" alt="logomedic" class="image__start"> 
+      </div>
+
+      <header class="menu" id="myTopnav">
+               <a href="/index.html" class="menu__link active" >Home</a>
+               <a href="" class="menu__link">Services</a>
+               <a href="" class="menu__link">Specialists</a>
+               <a href="" class="menu__link">About</a>
+               <a href="" class="menu__link">Registration</a>
+               <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars" ></i>
+                </a>
+      </header>
+      <script>
+         function myFunction() {
+           var x = document.getElementById("myTopnav");
+           if (x.className === "menu") {
+             x.className += " responsive";
+           } else {
+             x.className = "menu";
+           }
+         }
+       </script>
+
+      <div class="block">
+         <p class="block__name">The best private clinic</p>
+         <p class="block__text">in your city</p>
+      </div>
+      <div class="clinic-name">
+         <p class="clinic-name__name">good <span>HEART</span> clinic</p>
+      </div>
+
+      <div class="foto">
+         <img src="/img/doctors/2.jpg" alt="Lia amori" class="foto__doctor">
+      </div>
+      <div class="info-lia">
+         <h1 class="info-lia__name">Lia Amori</h1>
+         <p class="info-lia__special">doctor of general practic</p>
+      </div>
+      <div class="text-lia">
+         <p class="text-lia__aduc">Education</p>
+         <p class="text-lia__aduc-info"> 
+            
+            Universidad Complutense de Madrid (Spain) - Medical Degree in Pediatrics
+            University of Barcelona (Spain) - PhD in Medicine
+            University of Maryland (USA) - pediatric oncologist and hematologist</p>
+         <p class="text-lia__practic">Practic</p>
+         <p class="text-lia__practic-info"> Since 2004, Dr. Lia Amori has been an expert of the Spanish Ministry of Health in the field of pediatric oncology.
+
+            Dr. Lopez Ybor leads a foundation for children with serious health problems and an organization that improves the quality of life of children during their treatment.</p>
+         <p class="text-lia__time">Works Time</p>
+            <p class="text-lia__time-info">Works the first month on even numbers, the second on odd days</p>
+      </div>
+   </div>
+</body>
+</html>
