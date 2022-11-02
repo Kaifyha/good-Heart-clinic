@@ -1,32 +1,35 @@
 <?php
-
-// делаю данные формы
-
-$tel = $_POST['tel'];
-$name = $_POST['name'];
-
-// обработка полученных данных
-
-$tel = htmlspecialchars($tel); // преобразования символов
-$name = htmlspecialchars($name);
-
-$tel = urldecode($tel); // декодирование url
-$name = urldecode($name);
-
-$tel = trim($tel); // удаления пробелов в конце и в начале поля
-$name = trim($name);
-
-
-
-if (mail("svetapopova_2019@mail.ru",
-         "Новые данные",
-         "Телефон: ".$tel."\n".
-         "Имя: ".$name,
-         "From: smtp.mail.ru \r\n")
-   ) {
-      echo ('Good!');
-      }
-      else {
-         echo ('check your info...');
-      }
+/* Здесь проверяется существование переменных */
+if (isset($_POST['tel'])) {$tel = $_POST['tel'];}
+if (isset($_POST['name'])) {$name = $_POST['name'];}
+ 
+/* Сюда впишите свою эл. почту */
+$myaddres  = "welifeMK@yandex.ru"; // кому отправляем
+ 
+/* А здесь прописывается текст сообщения, \n - перенос строки */
+$mes = "Тема: номер телефона!\nТелефон: $tel\nИмя: $name";
+ 
+/* А эта функция как раз занимается отправкой письма на указанный вами email */
+$sub='Регистрация'; //сабж
+$email='Регистрация от пользователя'; // от кого
+$send = mail ($myaddres,$sub,$mes,"Content-type:text/plain; charset = utf-8\r\nFrom:$email");
+ 
+ini_set('short_open_tag', 'On');
+header('Refresh: 3; URL=index.html');
 ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="refresh" content="3; url=index.html">
+<title>Спасибо за регистрацию!</title>
+<meta name="generator">
+<script type="text/javascript">
+setTimeout('location.replace("/index.html")', 3000);
+/*Изменить текущий адрес страницы через 3 секунды (3000 миллисекунд)*/
+</script> 
+</head>
+<body>
+<h1>Спасибо за регистрацию!</h1>
+</body>
+</html>
